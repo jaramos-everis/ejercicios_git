@@ -1,2 +1,2 @@
 texto.
-Segunda linea de exto.
+Segunda linea de texto.
