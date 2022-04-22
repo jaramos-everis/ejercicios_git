@@ -1,0 +1,69 @@
+uuid: 0f368937-c266-48ce-8b6d-86324a981104
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cerveza_tipo.field_bloque_contenido_1
+    - field.field.node.cerveza_tipo.field_bloque_contenido_2
+    - field.field.node.cerveza_tipo.field_bloque_contenido_3
+    - field.field.node.cerveza_tipo.field_bloque_contenido_4
+    - field.field.node.cerveza_tipo.field_bloque_contenido_5
+    - node.type.cerveza_tipo
+  module:
+    - user
+id: node.cerveza_tipo.default
+targetEntityType: node
+bundle: cerveza_tipo
+mode: default
+content:
+  field_bloque_contenido_1:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bloque_contenido_2:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_bloque_contenido_3:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_bloque_contenido_4:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_bloque_contenido_5:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

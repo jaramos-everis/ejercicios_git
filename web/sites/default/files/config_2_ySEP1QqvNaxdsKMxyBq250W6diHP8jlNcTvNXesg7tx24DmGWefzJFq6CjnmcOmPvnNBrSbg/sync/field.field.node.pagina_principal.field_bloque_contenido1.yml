@@ -1,0 +1,29 @@
+uuid: c20364be-dce4-400d-84e7-a22236ffa1b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_block
+    - field.storage.node.field_bloque_contenido1
+    - node.type.pagina_principal
+id: node.pagina_principal.field_bloque_contenido1
+field_name: field_bloque_contenido1
+entity_type: node
+bundle: pagina_principal
+label: 'Bloque contenido 2'
+description: 'Bloque de contrenido1, 2º en visualizarse. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      content_block: content_block
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

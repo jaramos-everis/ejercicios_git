@@ -1,0 +1,22 @@
+uuid: 16a1e5fc-affc-4b67-a002-b53824de8c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cerveza_tipo
+id: node.cerveza_tipo.promote
+field_name: promote
+entity_type: node
+bundle: cerveza_tipo
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

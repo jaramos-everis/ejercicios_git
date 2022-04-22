@@ -1,0 +1,10 @@
+uuid: 94fd42a2-d407-42cf-ac92-e6cacf53b105
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.listado_de_cervezas
+label: 'Listado de cervezas'
+targetEntityType: node
+cache: true

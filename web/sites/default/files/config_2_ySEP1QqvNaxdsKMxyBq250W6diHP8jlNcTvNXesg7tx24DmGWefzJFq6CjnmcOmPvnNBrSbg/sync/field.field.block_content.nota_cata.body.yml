@@ -1,0 +1,23 @@
+uuid: 5728e5d6-fa64-4847-be4d-9fb6cf2b74e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nota_cata
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.nota_cata.body
+field_name: body
+entity_type: block_content
+bundle: nota_cata
+label: 'NOTA DE CATA'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

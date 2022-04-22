@@ -1,0 +1,20 @@
+uuid: 88daa457-9150-4374-a536-d5f1ab8ae2f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_alc_vol_
+field_name: field_alc_vol_
+entity_type: block_content
+type: text
+settings:
+  max_length: 50
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

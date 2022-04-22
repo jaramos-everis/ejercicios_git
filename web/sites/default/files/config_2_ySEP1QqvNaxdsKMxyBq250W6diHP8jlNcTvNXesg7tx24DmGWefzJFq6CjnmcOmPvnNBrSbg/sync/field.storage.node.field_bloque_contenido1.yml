@@ -1,0 +1,20 @@
+uuid: 6e74ac2a-b843-4dae-8b37-9254729e62de
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - node
+id: node.field_bloque_contenido1
+field_name: field_bloque_contenido1
+entity_type: node
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

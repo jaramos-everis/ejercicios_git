@@ -1,0 +1,32 @@
+uuid: b6f9fe12-2f99-497c-96d4-8d1a32e8cbe2
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.listado_de_cervezas
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__listado_de_cervezas_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:listado_de_cervezas-block_1'
+settings:
+  id: 'views_block:listado_de_cervezas-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      pagina_principal: pagina_principal

@@ -1,0 +1,10 @@
+uuid: e4c80405-20f5-4e90-9cdb-416188586d05
+langcode: en
+status: true
+dependencies: {  }
+id: prueba
+label: Prueba
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

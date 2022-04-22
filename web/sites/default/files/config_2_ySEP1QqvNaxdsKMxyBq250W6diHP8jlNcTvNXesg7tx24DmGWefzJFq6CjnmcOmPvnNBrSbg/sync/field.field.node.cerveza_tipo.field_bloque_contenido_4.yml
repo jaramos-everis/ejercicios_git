@@ -1,0 +1,29 @@
+uuid: 743e2242-55db-4b85-89cc-0132587a7045
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nota_cata
+    - field.storage.node.field_bloque_contenido_4
+    - node.type.cerveza_tipo
+id: node.cerveza_tipo.field_bloque_contenido_4
+field_name: field_bloque_contenido_4
+entity_type: node
+bundle: cerveza_tipo
+label: 'Bloque contenido 4 Cata'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      nota_cata: nota_cata
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

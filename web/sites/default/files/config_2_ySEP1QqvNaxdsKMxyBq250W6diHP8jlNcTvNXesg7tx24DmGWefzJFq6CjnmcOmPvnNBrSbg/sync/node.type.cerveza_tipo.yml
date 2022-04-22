@@ -1,0 +1,18 @@
+uuid: 1f03bde8-7172-4d09-acb7-32fd115c5504
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Tipo de cerveza'
+type: cerveza_tipo
+description: 'Páginas para cada tipo de cerveza'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,34 @@
+uuid: fde44cc2-8bfe-40dc-b5dc-b87b09b4e875
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_block_with_image
+    - core.entity_view_mode.block_content.cerveza_pagina
+    - field.field.block_content.content_block_with_image.body
+    - field.field.block_content.content_block_with_image.field_image_block1
+    - field.field.block_content.content_block_with_image.layout_builder__layout
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.content_block_with_image.cerveza_pagina
+targetEntityType: block_content
+bundle: content_block_with_image
+mode: cerveza_pagina
+content:
+  field_image_block1:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  layout_builder__layout: true

@@ -1,0 +1,91 @@
+uuid: 9f6408df-9da8-4f15-9212-3de6b56aa911
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_block_with_image
+    - field.field.block_content.content_block_with_image.body
+    - field.field.block_content.content_block_with_image.field_image_block1
+    - field.field.block_content.content_block_with_image.layout_builder__layout
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          a4267f8b-e16a-4954-9324-646d00bb9e8d:
+            uuid: a4267f8b-e16a-4954-9324-646d00bb9e8d
+            region: first
+            configuration:
+              id: 'field_block:block_content:content_block_with_image:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b6d213b1-b5e6-480e-9d1c-4db3b43d7f14:
+            uuid: b6d213b1-b5e6-480e-9d1c-4db3b43d7f14
+            region: second
+            configuration:
+              id: 'field_block:block_content:content_block_with_image:field_image_block1'
+              label: image_block
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: block_content.content_block_with_image.default
+targetEntityType: block_content
+bundle: content_block_with_image
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_block1:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  layout_builder__layout: true

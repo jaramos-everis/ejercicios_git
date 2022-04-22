@@ -1,0 +1,123 @@
+uuid: 0b34b11f-e04f-4fc2-b537-3819a21a9435
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_block
+    - field.field.block_content.content_block.body
+    - field.field.block_content.content_block.field_imagen_bloque
+    - field.field.block_content.content_block.field_link_block
+  module:
+    - image
+    - layout_builder
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Contenido
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          203528b8-7dbc-4855-887d-8cb0362d493b:
+            uuid: 203528b8-7dbc-4855-887d-8cb0362d493b
+            region: first
+            configuration:
+              id: 'field_block:block_content:content_block:field_imagen_bloque'
+              label: 'Imagen del bloque'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8276a78b-f9a3-41a8-9b96-ba5cc74b30ac:
+            uuid: 8276a78b-f9a3-41a8-9b96-ba5cc74b30ac
+            region: second
+            configuration:
+              id: 'field_block:block_content:content_block:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a02b7dae-c585-4e04-8c6e-aca5b4509d49:
+            uuid: a02b7dae-c585-4e04-8c6e-aca5b4509d49
+            region: second
+            configuration:
+              id: 'field_block:block_content:content_block:field_link_block'
+              label: 'Link del bloque'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.content_block.default
+targetEntityType: block_content
+bundle: content_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_bloque:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link_block:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  layout_builder__layout: true

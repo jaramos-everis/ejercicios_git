@@ -1,0 +1,176 @@
+uuid: 8cec10f9-506b-454d-b313-6134bb85fc8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.nota_cata
+    - field.field.block_content.nota_cata.body
+    - field.field.block_content.nota_cata.field_alc_vol_
+    - field.field.block_content.nota_cata.field_gluten
+    - field.field.block_content.nota_cata.field_imagen_cata
+    - field.field.block_content.nota_cata.field_temperatura_ideal1
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          92c2bdd6-7c2c-47bc-b3cd-f027e8681201:
+            uuid: 92c2bdd6-7c2c-47bc-b3cd-f027e8681201
+            region: first
+            configuration:
+              id: 'field_block:block_content:nota_cata:field_imagen_cata'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b3d9e04e-77fc-4075-9a87-48096d965fa4:
+            uuid: b3d9e04e-77fc-4075-9a87-48096d965fa4
+            region: second
+            configuration:
+              id: 'field_block:block_content:nota_cata:body'
+              label: 'Texto de cata'
+              label_display: visible
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ca82e05f-bff3-4f2a-9882-337ce8ff0b62:
+            uuid: ca82e05f-bff3-4f2a-9882-337ce8ff0b62
+            region: second
+            configuration:
+              id: 'field_block:block_content:nota_cata:field_alc_vol_'
+              label: 'Alc. Vol. '
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          e847e63c-5924-4c3f-9adc-50b141d7f575:
+            uuid: e847e63c-5924-4c3f-9adc-50b141d7f575
+            region: second
+            configuration:
+              id: 'field_block:block_content:nota_cata:field_temperatura_ideal1'
+              label: 'Temperatura ideal'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: inline
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d3772457-7934-4a1a-970b-4079e3a91f23:
+            uuid: d3772457-7934-4a1a-970b-4079e3a91f23
+            region: first
+            configuration:
+              id: 'field_block:block_content:nota_cata:field_gluten'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          558d6277-6fa9-4ba2-82d1-c29c618ec7f2:
+            uuid: 558d6277-6fa9-4ba2-82d1-c29c618ec7f2
+            region: second
+            configuration:
+              id: 'field_block:block_content:nota_cata:field_gluten'
+              label: gluten
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: block_content.nota_cata.default
+targetEntityType: block_content
+bundle: nota_cata
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_gluten:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: first
+  field_imagen_cata:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alc_vol_: true
+  field_temperatura_ideal1: true
