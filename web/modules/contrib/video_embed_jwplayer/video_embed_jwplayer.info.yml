@@ -1,0 +1,13 @@
+name: Video Embed JW Player
+type: module
+description: Provides a JW Player handler for Video Embed Fields.
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: Video Embed Field
+dependencies:
+  - video_embed_field:video_embed_field
+
+# Information added by Drupal.org packaging script on 2020-06-05
+version: '8.x-1.1'
+project: 'video_embed_jwplayer'
+datestamp: 1591364868
