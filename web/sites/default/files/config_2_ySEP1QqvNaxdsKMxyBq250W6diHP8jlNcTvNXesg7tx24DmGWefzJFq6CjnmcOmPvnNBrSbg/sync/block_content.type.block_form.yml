@@ -1,0 +1,8 @@
+uuid: bba9dc86-e241-4137-bbdd-b555d871ddb0
+langcode: en
+status: true
+dependencies: {  }
+id: block_form
+label: 'Block form'
+revision: 0
+description: 'Block form with a title, text and webform.'

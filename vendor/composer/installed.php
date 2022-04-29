@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-josemiguel',
+        'version' => 'dev-josemiguel',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '7276705433b4f680d22668fdf097b63fa108a738',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -208,11 +208,29 @@
                 0 => '9.3.11',
             ),
         ),
+        'drupal/bg_image_formatter' => array(
+            'pretty_version' => '1.15.0',
+            'version' => '1.15.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/bg_image_formatter',
+            'aliases' => array(),
+            'reference' => '8.x-1.15',
+            'dev_requirement' => false,
+        ),
         'drupal/big_pipe' => array(
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '9.3.11',
             ),
+        ),
+        'drupal/blazy' => array(
+            'pretty_version' => '2.10.0',
+            'version' => '2.10.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/blazy',
+            'aliases' => array(),
+            'reference' => '8.x-2.10',
+            'dev_requirement' => false,
         ),
         'drupal/block' => array(
             'dev_requirement' => false,
@@ -721,6 +739,15 @@
                 0 => '9.3.11',
             ),
         ),
+        'drupal/owlcarousel' => array(
+            'pretty_version' => '2.0.0-beta2',
+            'version' => '2.0.0.0-beta2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/owlcarousel',
+            'aliases' => array(),
+            'reference' => '8.x-2.0-beta2',
+            'dev_requirement' => false,
+        ),
         'drupal/page_cache' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -761,12 +788,12 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-josemiguel',
+            'version' => 'dev-josemiguel',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '7276705433b4f680d22668fdf097b63fa108a738',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
@@ -810,6 +837,24 @@
             'replaced' => array(
                 0 => '9.3.11',
             ),
+        ),
+        'drupal/slick' => array(
+            'pretty_version' => '2.6.0',
+            'version' => '2.6.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick',
+            'aliases' => array(),
+            'reference' => '8.x-2.6',
+            'dev_requirement' => false,
+        ),
+        'drupal/slick_views' => array(
+            'pretty_version' => '2.6.0',
+            'version' => '2.6.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/slick_views',
+            'aliases' => array(),
+            'reference' => '8.x-2.6',
+            'dev_requirement' => false,
         ),
         'drupal/standard' => array(
             'dev_requirement' => false,
@@ -895,11 +940,29 @@
                 0 => '9.3.11',
             ),
         ),
+        'drupal/views_slideshow' => array(
+            'pretty_version' => '4.8.0',
+            'version' => '4.8.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/views_slideshow',
+            'aliases' => array(),
+            'reference' => '8.x-4.8',
+            'dev_requirement' => false,
+        ),
         'drupal/views_ui' => array(
             'dev_requirement' => false,
             'replaced' => array(
                 0 => '9.3.11',
             ),
+        ),
+        'drupal/webform' => array(
+            'pretty_version' => '6.1.3',
+            'version' => '6.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/webform',
+            'aliases' => array(),
+            'reference' => '6.1.3',
+            'dev_requirement' => false,
         ),
         'drupal/workflows' => array(
             'dev_requirement' => false,

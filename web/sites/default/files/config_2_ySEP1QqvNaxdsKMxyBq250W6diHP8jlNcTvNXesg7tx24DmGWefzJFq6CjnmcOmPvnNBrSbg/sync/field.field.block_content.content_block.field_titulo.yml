@@ -1,0 +1,21 @@
+uuid: 9c297387-13ba-4b50-aa24-72782e8923d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_block
+    - field.storage.block_content.field_titulo
+  module:
+    - text
+id: block_content.content_block.field_titulo
+field_name: field_titulo
+entity_type: block_content
+bundle: content_block
+label: titulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

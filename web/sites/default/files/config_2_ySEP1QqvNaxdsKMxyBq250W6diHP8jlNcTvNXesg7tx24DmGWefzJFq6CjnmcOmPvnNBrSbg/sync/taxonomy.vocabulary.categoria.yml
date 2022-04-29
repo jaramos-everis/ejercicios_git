@@ -1,0 +1,8 @@
+uuid: 238df375-7707-4600-8d0d-8e1e60216f3e
+langcode: en
+status: true
+dependencies: {  }
+name: Categoría
+vid: categoria
+description: 'Categorías de artículos de prensa.'
+weight: 0

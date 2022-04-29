@@ -1,0 +1,38 @@
+uuid: 881166c4-719c-4121-9207-2696887e7e30
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_background
+    - field.storage.block_content.field_imagen_inicio_block
+  module:
+    - image
+id: block_content.bloque_background.field_imagen_inicio_block
+field_name: field_imagen_inicio_block
+entity_type: block_content
+bundle: bloque_background
+label: 'imagen inicio block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: e401ac78-8b63-4387-a88b-a5319ab7c7f8
+    alt: ''
+    title: ''
+    width: 1519
+    height: 528
+field_type: image

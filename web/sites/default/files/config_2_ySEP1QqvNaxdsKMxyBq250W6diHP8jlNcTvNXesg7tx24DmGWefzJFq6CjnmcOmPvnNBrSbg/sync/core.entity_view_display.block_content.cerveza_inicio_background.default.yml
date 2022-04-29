@@ -1,0 +1,51 @@
+uuid: 3ce006d0-6ae8-45c6-9692-ee51b006f03b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cerveza_inicio_background
+    - field.field.block_content.cerveza_inicio_background.body
+    - field.field.block_content.cerveza_inicio_background.field_image_background
+  module:
+    - bg_image_formatter
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.cerveza_inicio_background.default
+targetEntityType: block_content
+bundle: cerveza_inicio_background
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image_background:
+    type: bg_image_formatter
+    label: hidden
+    settings:
+      image_style: ''
+      css_settings:
+        bg_image_selector: '#block-cervezainicioestrella'
+        bg_image_z_index: auto
+        bg_image_color: '#006432'
+        bg_image_x: center
+        bg_image_y: center
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: ''
+        bg_image_media_query: all
+        bg_image_important: 1
+        bg_image_background_size_ie8: 0
+        bg_image_path_format: absolute
+        bg_image_gradient: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

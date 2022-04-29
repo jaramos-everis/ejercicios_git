@@ -1,0 +1,31 @@
+uuid: 924afee5-b08e-43b0-a6ba-f3c0a2365210
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_background
+    - block_content.type.content_block
+    - block_content.type.content_block_2
+    - field.storage.block_content.field_bloquecontenido
+id: block_content.bloque_background.field_bloquecontenido
+field_name: field_bloquecontenido
+entity_type: block_content
+bundle: bloque_background
+label: bloquecontenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      content_block: content_block
+      content_block_2: content_block_2
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: content_block
+field_type: entity_reference

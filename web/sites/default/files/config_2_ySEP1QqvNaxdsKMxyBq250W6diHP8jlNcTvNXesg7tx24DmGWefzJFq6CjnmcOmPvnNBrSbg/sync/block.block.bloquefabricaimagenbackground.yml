@@ -1,0 +1,30 @@
+uuid: b7f02ee7-3926-42d4-af7e-27e0fcd5b588
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:bloque_background:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: bloquefabricaimagenbackground
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+settings:
+  id: 'block_content:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+  label: 'BLOQUE FÁBRICA imagen background'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

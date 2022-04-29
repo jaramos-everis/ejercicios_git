@@ -1,0 +1,30 @@
+uuid: f120b8cf-5115-446c-8c61-897999eb80d1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_form:bbdcf3a4-b12d-4327-adc5-70a242b197ed'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: formcontactinicio
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:bbdcf3a4-b12d-4327-adc5-70a242b197ed'
+settings:
+  id: 'block_content:bbdcf3a4-b12d-4327-adc5-70a242b197ed'
+  label: 'Form contact inicio'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

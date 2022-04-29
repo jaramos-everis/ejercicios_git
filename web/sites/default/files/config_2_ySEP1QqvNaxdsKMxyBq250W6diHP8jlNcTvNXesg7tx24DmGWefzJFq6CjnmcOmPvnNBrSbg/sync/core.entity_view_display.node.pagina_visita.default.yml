@@ -1,0 +1,96 @@
+uuid: 8b5089d9-2cef-454e-aca7-39789b2f2a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_visita.field_paragraph
+    - field.field.node.pagina_visita.field_titulo
+    - field.field.node.pagina_visita.layout_builder__layout
+    - node.type.pagina_visita
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          83bdb621-31d3-405d-9c2e-c6ccafef3412:
+            uuid: 83bdb621-31d3-405d-9c2e-c6ccafef3412
+            region: content
+            configuration:
+              id: 'field_block:node:pagina_visita:field_titulo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8314370d-2c10-4f69-baa5-ca3cd27d6791:
+            uuid: 8314370d-2c10-4f69-baa5-ca3cd27d6791
+            region: content
+            configuration:
+              id: 'field_block:node:pagina_visita:field_paragraph'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4a63319b-9e98-47d8-ac63-e6a2e50a085a:
+            uuid: 4a63319b-9e98-47d8-ac63-e6a2e50a085a
+            region: content
+            configuration:
+              id: 'extra_field_block:node:pagina_visita:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.pagina_visita.default
+targetEntityType: node
+bundle: pagina_visita
+mode: default
+content:
+  field_paragraph:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  layout_builder__layout: true

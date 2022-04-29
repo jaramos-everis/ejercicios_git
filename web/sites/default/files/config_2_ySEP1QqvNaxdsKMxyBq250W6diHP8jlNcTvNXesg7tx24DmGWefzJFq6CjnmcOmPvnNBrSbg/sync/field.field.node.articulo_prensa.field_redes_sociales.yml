@@ -1,0 +1,33 @@
+uuid: 5b1d3e83-47d5-4f68-83f5-d64d8d30b510
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.compartir_redes_sociales
+    - field.storage.node.field_redes_sociales
+    - node.type.articulo_prensa
+  content:
+    - 'block_content:compartir_redes_sociales:d806412a-543a-4781-a3c1-7e13d74ce63a'
+id: node.articulo_prensa.field_redes_sociales
+field_name: field_redes_sociales
+entity_type: node
+bundle: articulo_prensa
+label: 'redes sociales'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: d806412a-543a-4781-a3c1-7e13d74ce63a
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      compartir_redes_sociales: compartir_redes_sociales
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

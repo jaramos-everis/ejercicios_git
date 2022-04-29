@@ -1,0 +1,30 @@
+uuid: 234d866e-2039-4236-9bb5-54063fedb41b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.entity_reference.field_pruenaba
+    - field.field.paragraph.entity_reference.field_reference
+    - paragraphs.paragraphs_type.entity_reference
+id: paragraph.entity_reference.default
+targetEntityType: paragraph
+bundle: entity_reference
+mode: default
+content:
+  field_pruenaba:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,25 @@
+uuid: af695093-de6d-4741-bb54-b396eac8f3d4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:compartir_redes_sociales:d806412a-543a-4781-a3c1-7e13d74ce63a'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: prensacompartirredessociales
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:d806412a-543a-4781-a3c1-7e13d74ce63a'
+settings:
+  id: 'block_content:d806412a-543a-4781-a3c1-7e13d74ce63a'
+  label: 'PRENSA - Compartir redes sociales'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

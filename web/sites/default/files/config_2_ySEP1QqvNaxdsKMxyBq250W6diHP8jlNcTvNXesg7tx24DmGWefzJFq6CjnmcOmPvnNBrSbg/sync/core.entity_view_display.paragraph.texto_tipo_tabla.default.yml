@@ -1,0 +1,140 @@
+uuid: f2e4af6a-7a19-4001-8df2-21923552c559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto_tipo_tabla.field_body
+    - field.field.paragraph.texto_tipo_tabla.field_text
+    - field.field.paragraph.texto_tipo_tabla.field_texto_1
+    - field.field.paragraph.texto_tipo_tabla.field_texto_2
+    - paragraphs.paragraphs_type.texto_tipo_tabla
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          12c9d2cb-0a15-47c1-b1ac-518c3eebdaa0:
+            uuid: 12c9d2cb-0a15-47c1-b1ac-518c3eebdaa0
+            region: first
+            configuration:
+              id: 'field_block:paragraph:texto_tipo_tabla:field_body'
+              label: body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 33-34-33
+        components:
+          b07666c5-afd8-4cd0-ba75-b6f46a9a9fa0:
+            uuid: b07666c5-afd8-4cd0-ba75-b6f46a9a9fa0
+            region: first
+            configuration:
+              id: 'field_block:paragraph:texto_tipo_tabla:field_text'
+              label: Text
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          599f631d-ce7a-4b93-ad6d-684e1639a426:
+            uuid: 599f631d-ce7a-4b93-ad6d-684e1639a426
+            region: second
+            configuration:
+              id: 'field_block:paragraph:texto_tipo_tabla:field_texto_1'
+              label: 'texto 1'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e8934f7c-97e8-4b0e-a571-6e37ab08f1a2:
+            uuid: e8934f7c-97e8-4b0e-a571-6e37ab08f1a2
+            region: third
+            configuration:
+              id: 'field_block:paragraph:texto_tipo_tabla:field_texto_2'
+              label: 'texto 2'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.texto_tipo_tabla.default
+targetEntityType: paragraph
+bundle: texto_tipo_tabla
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_texto_1:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_texto_2:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

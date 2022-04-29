@@ -3,6 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.content_block
+    - block_content.type.content_block_2
     - block_content.type.content_block_with_image
     - field.storage.node.field_bloque_contenido_3
     - node.type.cerveza_tipo
@@ -10,7 +12,7 @@ id: node.cerveza_tipo.field_bloque_contenido_3
 field_name: field_bloque_contenido_3
 entity_type: node
 bundle: cerveza_tipo
-label: 'Bloque contenido 3'
+label: 'Bloque contenido 3 ( imagen (R or L)+ texto)'
 description: ''
 required: false
 translatable: false
@@ -20,10 +22,12 @@ settings:
   handler: 'default:block_content'
   handler_settings:
     target_bundles:
+      content_block: content_block
+      content_block_2: content_block_2
       content_block_with_image: content_block_with_image
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: content_block_2
 field_type: entity_reference

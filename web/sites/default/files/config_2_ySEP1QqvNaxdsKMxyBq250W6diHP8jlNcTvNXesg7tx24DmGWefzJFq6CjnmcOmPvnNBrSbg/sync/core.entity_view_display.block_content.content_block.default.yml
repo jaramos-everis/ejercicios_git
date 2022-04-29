@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.content_block.body
     - field.field.block_content.content_block.field_imagen_bloque
     - field.field.block_content.content_block.field_link_block
+    - field.field.block_content.content_block.field_titulo
   module:
     - image
     - layout_builder
@@ -60,7 +61,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
           a02b7dae-c585-4e04-8c6e-aca5b4509d49:
             uuid: a02b7dae-c585-4e04-8c6e-aca5b4509d49
@@ -83,7 +84,25 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-            weight: 2
+            weight: 3
+            additional: {  }
+          34aa6cc9-a58e-4c6e-906a-3b286b7e2d73:
+            uuid: 34aa6cc9-a58e-4c6e-906a-3b286b7e2d73
+            region: second
+            configuration:
+              id: 'field_block:block_content:content_block:field_titulo'
+              label: titulo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
 id: block_content.content_block.default
@@ -120,4 +139,5 @@ content:
     weight: 2
     region: content
 hidden:
+  field_titulo: true
   layout_builder__layout: true

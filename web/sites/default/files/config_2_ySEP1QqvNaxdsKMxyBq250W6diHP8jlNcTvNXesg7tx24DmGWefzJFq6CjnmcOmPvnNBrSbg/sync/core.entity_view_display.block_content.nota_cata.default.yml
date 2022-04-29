@@ -97,23 +97,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          d3772457-7934-4a1a-970b-4079e3a91f23:
-            uuid: d3772457-7934-4a1a-970b-4079e3a91f23
-            region: first
-            configuration:
-              id: 'field_block:block_content:nota_cata:field_gluten'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: above
-                settings:
-                  image_link: ''
-                  image_style: ''
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
           558d6277-6fa9-4ba2-82d1-c29c618ec7f2:
             uuid: 558d6277-6fa9-4ba2-82d1-c29c618ec7f2
             region: second

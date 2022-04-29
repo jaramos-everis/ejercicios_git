@@ -11,10 +11,35 @@ dependencies:
   module:
     - image
     - layout_builder
+    - layout_discovery
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          68f95d09-d285-4441-ab48-6989436c144a:
+            uuid: 68f95d09-d285-4441-ab48-6989436c144a
+            region: content
+            configuration:
+              id: 'field_block:block_content:content_block_with_image:field_image_block1'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: block_content.content_block_with_image.cerveza_pagina
 targetEntityType: block_content
 bundle: content_block_with_image

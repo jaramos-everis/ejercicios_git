@@ -1,0 +1,21 @@
+uuid: 339bb66e-8d98-4c00-b286-866b3452b972
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_1
+    - paragraphs.paragraphs_type.texto_tipo_tabla
+  module:
+    - text
+id: paragraph.texto_tipo_tabla.field_texto_1
+field_name: field_texto_1
+entity_type: paragraph
+bundle: texto_tipo_tabla
+label: 'texto 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

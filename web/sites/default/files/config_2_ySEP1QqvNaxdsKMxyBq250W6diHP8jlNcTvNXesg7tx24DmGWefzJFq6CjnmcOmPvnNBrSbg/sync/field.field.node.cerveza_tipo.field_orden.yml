@@ -1,0 +1,23 @@
+uuid: 92585286-ad8c-4f01-bdf6-26a99f8a16dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.cerveza_tipo
+id: node.cerveza_tipo.field_orden
+field_name: field_orden
+entity_type: node
+bundle: cerveza_tipo
+label: orden
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

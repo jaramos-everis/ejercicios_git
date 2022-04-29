@@ -1,0 +1,32 @@
+uuid: 520fb5ed-4955-4dff-88ab-34f5e4018b6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo_promocion.body
+    - field.field.node.articulo_promocion.field_imagen_promocion
+    - node.type.articulo_promocion
+  module:
+    - text
+    - user
+id: node.articulo_promocion.teaser
+targetEntityType: node
+bundle: articulo_promocion
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_promocion: true

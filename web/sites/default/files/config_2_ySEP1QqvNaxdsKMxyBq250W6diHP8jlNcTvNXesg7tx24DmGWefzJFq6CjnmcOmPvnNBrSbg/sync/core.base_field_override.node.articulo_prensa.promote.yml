@@ -1,0 +1,22 @@
+uuid: 23414b2d-dc4c-4a7f-9a2a-5041912f2fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.articulo_prensa
+id: node.articulo_prensa.promote
+field_name: promote
+entity_type: node
+bundle: articulo_prensa
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

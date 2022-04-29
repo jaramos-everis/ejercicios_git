@@ -1,0 +1,10 @@
+uuid: 739ba093-26b1-459a-b138-77f03e6798b8
+langcode: en
+status: true
+dependencies: {  }
+id: text_image_2c_imgr
+label: 'Text + image. 2C - ImgR'
+icon_uuid: null
+icon_default: null
+description: 'Text with imagen, same region, two columns, imagen right.'
+behavior_plugins: {  }

@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.cerveza_tipo.field_bloque_contenido_1
     - field.field.node.cerveza_tipo.field_bloque_contenido_2
     - field.field.node.cerveza_tipo.field_bloque_contenido_3
     - field.field.node.cerveza_tipo.field_bloque_contenido_4
     - field.field.node.cerveza_tipo.field_bloque_contenido_5
+    - field.field.node.cerveza_tipo.field_imagen_cerveza
+    - field.field.node.cerveza_tipo.field_orden
+    - field.field.node.cerveza_tipo.field_texto_cerveza
     - node.type.cerveza_tipo
   module:
     - user
@@ -23,8 +25,10 @@ content:
     weight: 100
     region: content
 hidden:
-  field_bloque_contenido_1: true
   field_bloque_contenido_2: true
   field_bloque_contenido_3: true
   field_bloque_contenido_4: true
   field_bloque_contenido_5: true
+  field_imagen_cerveza: true
+  field_orden: true
+  field_texto_cerveza: true

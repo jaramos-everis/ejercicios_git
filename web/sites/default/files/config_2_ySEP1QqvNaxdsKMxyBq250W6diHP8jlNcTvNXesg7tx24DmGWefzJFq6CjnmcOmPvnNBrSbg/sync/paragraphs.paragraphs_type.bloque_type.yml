@@ -1,0 +1,10 @@
+uuid: 361d9040-5dbb-4f07-bfa9-85d5c3287f15
+langcode: en
+status: true
+dependencies: {  }
+id: bloque_type
+label: 'Bloque type'
+icon_uuid: null
+icon_default: null
+description: 'A type block, entiti reference.'
+behavior_plugins: {  }

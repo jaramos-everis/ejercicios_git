@@ -1,0 +1,66 @@
+uuid: 27e7a3fe-0bf7-4f43-870b-c2f6f742d871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.pagina_visita
+    - paragraphs.paragraphs_type.articulo_historia
+    - paragraphs.paragraphs_type.bloque_type
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.entity_reference
+    - paragraphs.paragraphs_type.text_image_2c_imgr
+    - paragraphs.paragraphs_type.texto_imagen
+    - paragraphs.paragraphs_type.texto_tipo_tabla
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.pagina_visita.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: pagina_visita
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content: content
+      bloque_type: bloque_type
+      texto_imagen: texto_imagen
+      text_image_2c_imgr: text_image_2c_imgr
+      articulo_historia: articulo_historia
+      texto_tipo_tabla: texto_tipo_tabla
+      entity_reference: entity_reference
+      video: video
+    negate: 0
+    target_bundles_drag_drop:
+      articulo_historia:
+        weight: 9
+        enabled: true
+      bloque_type:
+        weight: 5
+        enabled: true
+      content:
+        weight: 2
+        enabled: true
+      entity_reference:
+        weight: 10
+        enabled: true
+      text_image_2c_imgr:
+        weight: 6
+        enabled: true
+      texto_imagen:
+        weight: 5
+        enabled: true
+      texto_tipo_tabla:
+        weight: 9
+        enabled: true
+      video:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

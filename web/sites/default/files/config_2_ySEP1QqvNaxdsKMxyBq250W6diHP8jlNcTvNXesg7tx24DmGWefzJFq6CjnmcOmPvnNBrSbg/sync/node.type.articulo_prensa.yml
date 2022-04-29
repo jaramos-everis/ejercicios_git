@@ -1,0 +1,18 @@
+uuid: b1627d6a-3ee2-49e8-a8e5-faabcac2f78d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Artículo prensa'
+type: articulo_prensa
+description: 'Articulo de prensa, incluye imagen, texto, redes sociales y taxonomía.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

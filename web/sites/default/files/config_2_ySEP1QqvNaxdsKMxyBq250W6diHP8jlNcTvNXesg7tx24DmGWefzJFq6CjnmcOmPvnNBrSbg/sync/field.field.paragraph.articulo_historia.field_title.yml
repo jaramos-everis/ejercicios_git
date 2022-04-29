@@ -1,0 +1,19 @@
+uuid: 10d438f9-209f-40b8-84f2-0becc66232e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.articulo_historia
+id: paragraph.articulo_historia.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: articulo_historia
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

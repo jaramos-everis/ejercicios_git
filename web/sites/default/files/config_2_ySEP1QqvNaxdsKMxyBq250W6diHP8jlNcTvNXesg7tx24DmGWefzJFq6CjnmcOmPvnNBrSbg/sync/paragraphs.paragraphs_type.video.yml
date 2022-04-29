@@ -1,0 +1,10 @@
+uuid: 585373f5-ebad-4c9f-a473-1ede6f0acd00
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+icon_uuid: null
+icon_default: null
+description: 'Campo de video.'
+behavior_plugins: {  }

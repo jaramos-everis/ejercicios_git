@@ -1,0 +1,15 @@
+uuid: fc5f6d98-4060-46b8-85b6-24d65fdf97c4
+langcode: en
+status: true
+dependencies: {  }
+name: escala_y_corte
+label: 'ESCALA Y CORTE 400 x 250'
+effects:
+  ce2b8a09-61e5-48cb-a079-0c0d78a489a9:
+    uuid: ce2b8a09-61e5-48cb-a079-0c0d78a489a9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 250
+      anchor: center-center

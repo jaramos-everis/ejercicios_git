@@ -1,0 +1,103 @@
+uuid: 6b144165-dc1f-483d-83d1-f7f28de89bf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.articulo_promocion.body
+    - field.field.node.articulo_promocion.field_imagen_promocion
+    - node.type.articulo_promocion
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          94e9df0e-4dd6-4bf7-b2dc-8550995f97f9:
+            uuid: 94e9df0e-4dd6-4bf7-b2dc-8550995f97f9
+            region: content
+            configuration:
+              id: 'field_block:node:articulo_promocion:field_imagen_promocion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          0c6febc2-ac6a-4b9d-be19-c95582f6e3b2:
+            uuid: 0c6febc2-ac6a-4b9d-be19-c95582f6e3b2
+            region: content
+            configuration:
+              id: 'field_block:node:articulo_promocion:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          c75980bc-9eb5-4f39-a417-f2705aebc8f4:
+            uuid: c75980bc-9eb5-4f39-a417-f2705aebc8f4
+            region: content
+            configuration:
+              id: 'field_block:node:articulo_promocion:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.articulo_promocion.default
+targetEntityType: node
+bundle: articulo_promocion
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_promocion:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

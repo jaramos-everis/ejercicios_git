@@ -1,0 +1,10 @@
+uuid: 3b708949-f15f-42e2-a5ef-1990cba27a8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.articulo_prensa
+label: 'Artículo de prensa'
+targetEntityType: node
+cache: true

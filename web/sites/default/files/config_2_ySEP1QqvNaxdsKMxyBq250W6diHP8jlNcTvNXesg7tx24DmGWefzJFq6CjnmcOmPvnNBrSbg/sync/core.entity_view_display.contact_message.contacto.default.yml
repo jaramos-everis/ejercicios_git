@@ -1,0 +1,280 @@
+uuid: e983fd70-b977-4374-98f1-7242fb9fdcca
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.field.contact_message.contacto.field_apellido
+    - field.field.contact_message.contacto.field_asunto
+    - field.field.contact_message.contacto.field_datos_contacto
+    - field.field.contact_message.contacto.field_email
+    - field.field.contact_message.contacto.field_informacion_form
+    - field.field.contact_message.contacto.field_nombre
+    - field.field.contact_message.contacto.field_pais
+    - field.field.contact_message.contacto.field_proteccion
+    - field.field.contact_message.contacto.field_telefono
+  module:
+    - layout_builder
+    - link
+    - options
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          d39544d4-1324-4aac-a2a5-e985d6b41d5b:
+            uuid: d39544d4-1324-4aac-a2a5-e985d6b41d5b
+            region: first
+            configuration:
+              id: 'field_block:contact_message:contacto:field_datos_contacto'
+              label: 'datos contacto'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7245473d-7ff2-4966-86cf-24bc99034bf7:
+            uuid: 7245473d-7ff2-4966-86cf-24bc99034bf7
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_apellido'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          3c5bf69d-62a0-4148-901f-6670b1f56777:
+            uuid: 3c5bf69d-62a0-4148-901f-6670b1f56777
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_informacion_form'
+              label: 'Informacion form'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          852cb651-2b76-46d1-9325-ada2b246a88f:
+            uuid: 852cb651-2b76-46d1-9325-ada2b246a88f
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_nombre'
+              label: Nombre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          5bd3950c-b749-4f8b-a504-7a94ea9b3b65:
+            uuid: 5bd3950c-b749-4f8b-a504-7a94ea9b3b65
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_email'
+              label: email
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: email_mailto
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          8f1e3a84-bd59-415d-9a37-6cbca9ad4e6c:
+            uuid: 8f1e3a84-bd59-415d-9a37-6cbca9ad4e6c
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_telefono'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          181c3f1a-f35e-4c3f-b908-8bf1e46c6118:
+            uuid: 181c3f1a-f35e-4c3f-b908-8bf1e46c6118
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_pais'
+              label: País
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_key
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          ead7fb5e-6f3f-40f9-8066-e6ed00e811f9:
+            uuid: ead7fb5e-6f3f-40f9-8066-e6ed00e811f9
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_asunto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          68b95b4b-c3a2-4f85-9342-fd6f42975df7:
+            uuid: 68b95b4b-c3a2-4f85-9342-fd6f42975df7
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:message'
+              label: Mensaje
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          2d910c4b-ae7c-4669-941a-17e956f69424:
+            uuid: 2d910c4b-ae7c-4669-941a-17e956f69424
+            region: second
+            configuration:
+              id: 'field_block:contact_message:contacto:field_proteccion'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+        third_party_settings: {  }
+id: contact_message.contacto.default
+targetEntityType: contact_message
+bundle: contacto
+mode: default
+content:
+  field_apellido:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_asunto:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_nombre:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pais:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_proteccion:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_telefono:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  message:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_datos_contacto: true
+  field_informacion_form: true

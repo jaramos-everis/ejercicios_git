@@ -1,0 +1,144 @@
+uuid: 5919d1ed-266b-4f2e-ac7a-a457a4b86d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_form
+    - field.field.block_content.block_form.field_form
+    - field.field.block_content.block_form.field_text_contact_form
+    - field.field.block_content.block_form.field_text_info_form
+    - field.field.block_content.block_form.field_titulo
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - webform
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          10b3cf04-6841-4c23-baf1-9d8b35e7532e:
+            uuid: 10b3cf04-6841-4c23-baf1-9d8b35e7532e
+            region: content
+            configuration:
+              id: 'field_block:block_content:block_form:field_titulo'
+              label: titulo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          3c47f9a1-5d40-4c47-9748-6df93df95b3d:
+            uuid: 3c47f9a1-5d40-4c47-9748-6df93df95b3d
+            region: second
+            configuration:
+              id: 'field_block:block_content:block_form:field_form'
+              label: Form
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: webform_entity_reference_entity_view
+                label: hidden
+                settings:
+                  source_entity: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          bc786a86-7b21-4f80-8745-9cde682eda42:
+            uuid: bc786a86-7b21-4f80-8745-9cde682eda42
+            region: first
+            configuration:
+              id: 'field_block:block_content:block_form:field_text_contact_form'
+              label: 'text contact form'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          01ff1462-efb6-4ff6-b9db-f92dede063d0:
+            uuid: 01ff1462-efb6-4ff6-b9db-f92dede063d0
+            region: second
+            configuration:
+              id: 'field_block:block_content:block_form:field_text_info_form'
+              label: 'Text info form'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.block_form.default
+targetEntityType: block_content
+bundle: block_form
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_form:
+    type: webform_entity_reference_entity_view
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_contact_form:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text_info_form:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_titulo: true

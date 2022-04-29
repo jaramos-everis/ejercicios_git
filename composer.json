@@ -21,10 +21,15 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.1",
+        "drupal/bg_image_formatter": "^1.15",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/owlcarousel": "^2.0@beta",
         "drupal/paragraphs": "^1.13",
+        "drupal/slick_views": "^2.6",
+        "drupal/views_slideshow": "^4.7",
+        "drupal/webform": "^6.1",
         "drush/drush": "^11.0"
     },
     "conflict": {

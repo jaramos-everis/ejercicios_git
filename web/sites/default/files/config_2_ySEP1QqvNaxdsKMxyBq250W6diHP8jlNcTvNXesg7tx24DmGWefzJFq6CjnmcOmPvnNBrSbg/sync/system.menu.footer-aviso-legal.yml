@@ -1,0 +1,8 @@
+uuid: 41132c8b-03cd-4e99-8f27-a9c671cc6543
+langcode: en
+status: true
+dependencies: {  }
+id: footer-aviso-legal
+label: 'Footer aviso legal'
+description: 'Menu en footer con avisos legales y privacidad.'
+locked: false

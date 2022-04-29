@@ -1,0 +1,25 @@
+uuid: f289d47c-390c-4635-8737-6ddaa84c88fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-principal
+  module:
+    - system
+  theme:
+    - bartik
+id: menuprincipal
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-principal'
+settings:
+  id: 'system_menu_block:menu-principal'
+  label: 'Menú principal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

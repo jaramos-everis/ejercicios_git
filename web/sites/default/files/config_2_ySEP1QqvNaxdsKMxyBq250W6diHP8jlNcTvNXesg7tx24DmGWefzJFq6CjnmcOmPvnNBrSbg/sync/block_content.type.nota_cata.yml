@@ -5,4 +5,4 @@ dependencies: {  }
 id: nota_cata
 label: 'Nota de cata block'
 revision: 0
-description: 'Nota de cata block contains a title, body and image.'
+description: 'Nota de cata block contains a title, body, image cata, image gluten, text temp and text vol alc.'

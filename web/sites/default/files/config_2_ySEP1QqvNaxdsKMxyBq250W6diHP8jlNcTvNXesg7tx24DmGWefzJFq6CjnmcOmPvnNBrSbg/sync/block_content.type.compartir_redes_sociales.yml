@@ -1,0 +1,8 @@
+uuid: fa14ff81-4894-461a-b1ec-a208ea648036
+langcode: en
+status: true
+dependencies: {  }
+id: compartir_redes_sociales
+label: 'Compartir redes sociales'
+revision: 0
+description: 'Bloque compartir en redes sociales, artículos. '

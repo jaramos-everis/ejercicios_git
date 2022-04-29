@@ -1,0 +1,30 @@
+uuid: ab8e07fc-c5e1-47b7-ab26-415535694e2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact
+    - options
+id: contact_message.field_pais
+field_name: field_pais
+entity_type: contact_message
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: ES
+      label: España
+    -
+      value: EN
+      label: Inglaterra
+    -
+      value: DE
+      label: Alemania
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

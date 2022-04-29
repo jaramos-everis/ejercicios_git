@@ -1,0 +1,10 @@
+uuid: 16e569c1-2590-47ae-984e-bfe0ee556bc6
+langcode: en
+status: true
+dependencies: {  }
+id: texto_tipo_tabla
+label: 'Texto tipo tabla'
+icon_uuid: null
+icon_default: null
+description: 'Body + texto 3 tipo tabla.'
+behavior_plugins: {  }

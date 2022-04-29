@@ -1,0 +1,23 @@
+uuid: efd80462-6e5f-4cfa-b4f9-58a3302f1b15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.articulo_promocion
+  module:
+    - text
+id: node.articulo_promocion.body
+field_name: body
+entity_type: node
+bundle: articulo_promocion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

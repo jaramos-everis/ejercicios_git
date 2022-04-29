@@ -1,0 +1,52 @@
+uuid: ad6985db-694a-4249-9334-6033399bf2cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto_tipo_tabla.field_body
+    - field.field.paragraph.texto_tipo_tabla.field_text
+    - field.field.paragraph.texto_tipo_tabla.field_texto_1
+    - field.field.paragraph.texto_tipo_tabla.field_texto_2
+    - paragraphs.paragraphs_type.texto_tipo_tabla
+  module:
+    - text
+id: paragraph.texto_tipo_tabla.default
+targetEntityType: paragraph
+bundle: texto_tipo_tabla
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_texto_1:
+    type: text_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_texto_2:
+    type: text_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

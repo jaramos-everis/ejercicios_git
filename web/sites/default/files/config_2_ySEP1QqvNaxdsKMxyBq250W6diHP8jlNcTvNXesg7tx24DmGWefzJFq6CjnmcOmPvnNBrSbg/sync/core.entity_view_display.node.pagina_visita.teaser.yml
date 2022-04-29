@@ -1,0 +1,26 @@
+uuid: 0fd9274e-061d-4dcf-8e00-2890fd7f0460
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_visita.field_paragraph
+    - field.field.node.pagina_visita.field_titulo
+    - field.field.node.pagina_visita.layout_builder__layout
+    - node.type.pagina_visita
+  module:
+    - user
+id: node.pagina_visita.teaser
+targetEntityType: node
+bundle: pagina_visita
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_paragraph: true
+  field_titulo: true
+  layout_builder__layout: true

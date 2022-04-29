@@ -3,14 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.cerveza_tipo.field_bloque_contenido_1
     - field.field.node.cerveza_tipo.field_bloque_contenido_2
     - field.field.node.cerveza_tipo.field_bloque_contenido_3
     - field.field.node.cerveza_tipo.field_bloque_contenido_4
     - field.field.node.cerveza_tipo.field_bloque_contenido_5
+    - field.field.node.cerveza_tipo.field_imagen_cerveza
+    - field.field.node.cerveza_tipo.field_orden
+    - field.field.node.cerveza_tipo.field_texto_cerveza
+    - image.style.thumbnail
     - node.type.cerveza_tipo
   module:
+    - image
     - path
+    - text
 id: node.cerveza_tipo.default
 targetEntityType: node
 bundle: cerveza_tipo
@@ -19,12 +24,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_bloque_contenido_1:
-    type: options_select
-    weight: 124
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -47,12 +46,31 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_bloque_contenido_5:
-    type: entity_reference_autocomplete
+    type: options_select
     weight: 126
     region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_cerveza:
+    type: image_image
+    weight: 127
+    region: content
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_orden:
+    type: number
+    weight: 129
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_texto_cerveza:
+    type: text_textfield
+    weight: 128
+    region: content
+    settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }

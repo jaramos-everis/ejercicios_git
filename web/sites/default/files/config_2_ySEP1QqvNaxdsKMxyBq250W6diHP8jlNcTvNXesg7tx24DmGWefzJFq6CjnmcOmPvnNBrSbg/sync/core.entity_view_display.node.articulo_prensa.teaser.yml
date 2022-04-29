@@ -1,0 +1,42 @@
+uuid: 7832e9c7-9e87-443c-b454-c065c2925c84
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo_prensa.body
+    - field.field.node.articulo_prensa.field_imagen_prensa
+    - field.field.node.articulo_prensa.field_redes_sociales
+    - field.field.node.articulo_prensa.field_tax_categoria
+    - node.type.articulo_prensa
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.articulo_prensa.teaser
+targetEntityType: node
+bundle: articulo_prensa
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagen_prensa: true
+  field_redes_sociales: true
+  field_tax_categoria: true

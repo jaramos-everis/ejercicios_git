@@ -1,0 +1,21 @@
+uuid: 2e97c370-3b9b-4d66-b23a-42e4bb6e5dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pruenaba
+    - paragraphs.paragraphs_type.entity_reference
+id: paragraph.entity_reference.field_pruenaba
+field_name: field_pruenaba
+entity_type: paragraph
+bundle: entity_reference
+label: pruenaba
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings: {  }
+field_type: entity_reference

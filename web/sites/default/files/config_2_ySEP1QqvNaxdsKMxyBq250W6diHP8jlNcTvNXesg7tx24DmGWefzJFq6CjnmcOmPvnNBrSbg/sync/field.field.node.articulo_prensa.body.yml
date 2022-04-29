@@ -1,0 +1,23 @@
+uuid: 1d25637f-3be4-4adb-b1ab-bf2a510216ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.articulo_prensa
+  module:
+    - text
+id: node.articulo_prensa.body
+field_name: body
+entity_type: node
+bundle: articulo_prensa
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

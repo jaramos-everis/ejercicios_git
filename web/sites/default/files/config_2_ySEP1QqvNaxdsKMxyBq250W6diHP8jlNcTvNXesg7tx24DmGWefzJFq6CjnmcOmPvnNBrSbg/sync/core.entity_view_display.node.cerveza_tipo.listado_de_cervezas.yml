@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.listado_de_cervezas
-    - field.field.node.cerveza_tipo.field_bloque_contenido_1
     - field.field.node.cerveza_tipo.field_bloque_contenido_2
     - field.field.node.cerveza_tipo.field_bloque_contenido_3
     - field.field.node.cerveza_tipo.field_bloque_contenido_4
     - field.field.node.cerveza_tipo.field_bloque_contenido_5
+    - field.field.node.cerveza_tipo.field_imagen_cerveza
+    - field.field.node.cerveza_tipo.field_orden
+    - field.field.node.cerveza_tipo.field_texto_cerveza
     - node.type.cerveza_tipo
   module:
     - layout_builder
@@ -25,24 +27,59 @@ third_party_settings:
           label: ''
           context_mapping: {  }
         components:
-          91c17a33-1270-43ca-8a76-611908ee8446:
-            uuid: 91c17a33-1270-43ca-8a76-611908ee8446
+          0f1f9ca1-17f8-4967-a7e8-e0fd673f6065:
+            uuid: 0f1f9ca1-17f8-4967-a7e8-e0fd673f6065
             region: content
             configuration:
-              id: 'field_block:node:cerveza_tipo:field_bloque_contenido_1'
-              label: 'Bloque contenido 1 Principal'
+              id: 'field_block:node:cerveza_tipo:field_imagen_cerveza'
+              label: 'Imagen principal cerveza'
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: entity_reference_entity_view
+                type: image
                 label: hidden
                 settings:
-                  view_mode: cerveza_pagina
+                  image_link: content
+                  image_style: ''
                 third_party_settings: {  }
-            weight: 0
+            weight: 2
+            additional: {  }
+          f9282525-bac4-48dd-b404-94b02d7d9a21:
+            uuid: f9282525-bac4-48dd-b404-94b02d7d9a21
+            region: content
+            configuration:
+              id: 'field_block:node:cerveza_tipo:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          798b8974-5e56-4e97-b3f7-f2d89a00107d:
+            uuid: 798b8974-5e56-4e97-b3f7-f2d89a00107d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cerveza_tipo:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
             additional: {  }
         third_party_settings: {  }
 id: node.cerveza_tipo.listado_de_cervezas
@@ -100,4 +137,7 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-hidden: {  }
+hidden:
+  field_imagen_cerveza: true
+  field_orden: true
+  field_texto_cerveza: true

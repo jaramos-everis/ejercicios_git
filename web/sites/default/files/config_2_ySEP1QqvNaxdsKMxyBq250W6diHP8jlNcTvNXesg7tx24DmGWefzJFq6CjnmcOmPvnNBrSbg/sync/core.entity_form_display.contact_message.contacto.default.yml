@@ -1,0 +1,127 @@
+uuid: 8ae56af1-fdb9-4166-9b17-684ada459aef
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.field.contact_message.contacto.field_apellido
+    - field.field.contact_message.contacto.field_asunto
+    - field.field.contact_message.contacto.field_datos_contacto
+    - field.field.contact_message.contacto.field_email
+    - field.field.contact_message.contacto.field_informacion_form
+    - field.field.contact_message.contacto.field_nombre
+    - field.field.contact_message.contacto.field_pais
+    - field.field.contact_message.contacto.field_proteccion
+    - field.field.contact_message.contacto.field_telefono
+  module:
+    - link
+    - text
+id: contact_message.contacto.default
+targetEntityType: contact_message
+bundle: contacto
+mode: default
+content:
+  copy:
+    weight: 50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_apellido:
+    type: text_textfield
+    weight: 52
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_asunto:
+    type: options_select
+    weight: 56
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_datos_contacto:
+    type: text_textfield
+    weight: 59
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 53
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_informacion_form:
+    type: text_textfield
+    weight: 58
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nombre:
+    type: text_textfield
+    weight: 51
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pais:
+    type: options_select
+    weight: 55
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_proteccion:
+    type: link_default
+    weight: 57
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_telefono:
+    type: number
+    weight: 54
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  mail:
+    weight: -40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: -50
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  preview:
+    weight: 40
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: -10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

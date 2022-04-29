@@ -1,0 +1,21 @@
+uuid: 2d6c3a22-dbc3-4a36-8f32-0d634eb181dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contacto
+    - field.storage.contact_message.field_informacion_form
+  module:
+    - text
+id: contact_message.contacto.field_informacion_form
+field_name: field_informacion_form
+entity_type: contact_message
+bundle: contacto
+label: 'Informacion form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

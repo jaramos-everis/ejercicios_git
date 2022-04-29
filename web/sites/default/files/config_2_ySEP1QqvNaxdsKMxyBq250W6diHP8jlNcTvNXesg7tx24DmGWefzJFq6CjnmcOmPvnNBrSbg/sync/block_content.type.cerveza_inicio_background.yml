@@ -1,0 +1,8 @@
+uuid: 91226d62-08a7-4bfb-8a4c-259ff3434fc3
+langcode: en
+status: true
+dependencies: {  }
+id: cerveza_inicio_background
+label: 'Cerveza inicio background'
+revision: 0
+description: 'Bloque de inicio con imagen de cerveza en background con texto.'

@@ -1,0 +1,41 @@
+uuid: 6feb8e50-836f-434e-b9bb-248d89afa2b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_background
+    - field.field.block_content.bloque_background.field_bloquecontenido
+    - field.field.block_content.bloque_background.field_imagen_inicio_block
+    - field.field.block_content.bloque_background.layout_builder__layout
+    - image.style.thumbnail
+  module:
+    - image
+id: block_content.bloque_background.default
+targetEntityType: block_content
+bundle: bloque_background
+mode: default
+content:
+  field_bloquecontenido:
+    type: options_select
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_inicio_block:
+    type: image_image
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

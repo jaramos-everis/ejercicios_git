@@ -1,0 +1,30 @@
+uuid: 60b57f88-02eb-4500-a332-41777d5eef29
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:cerveza_inicio_background:6c9db7d7-4057-4cc4-843e-8c88e4612f15'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: cervezainicioestrella
+theme: bartik
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:6c9db7d7-4057-4cc4-843e-8c88e4612f15'
+settings:
+  id: 'block_content:6c9db7d7-4057-4cc4-843e-8c88e4612f15'
+  label: 'CERVEZA INICIO ESTRELLA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -10,7 +10,7 @@ id: node.cerveza_tipo.field_bloque_contenido_2
 field_name: field_bloque_contenido_2
 entity_type: node
 bundle: cerveza_tipo
-label: 'Bloque contenido 2'
+label: 'Bloque contenido 2 (imagen con texto)'
 description: ''
 required: false
 translatable: false

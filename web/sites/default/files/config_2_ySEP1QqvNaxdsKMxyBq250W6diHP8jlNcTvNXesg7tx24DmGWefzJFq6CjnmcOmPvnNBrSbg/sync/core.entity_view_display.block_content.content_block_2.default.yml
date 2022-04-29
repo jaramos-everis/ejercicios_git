@@ -7,6 +7,7 @@ dependencies:
     - field.field.block_content.content_block_2.body
     - field.field.block_content.content_block_2.field_image_block
     - field.field.block_content.content_block_2.field_link_block1
+    - field.field.block_content.content_block_2.field_titulo
   module:
     - image
     - layout_builder
@@ -60,7 +61,7 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 0
+            weight: 2
             additional: {  }
           898eb2fe-5f5f-4346-92a0-58dfa3de312a:
             uuid: 898eb2fe-5f5f-4346-92a0-58dfa3de312a
@@ -83,7 +84,25 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-            weight: 1
+            weight: 3
+            additional: {  }
+          b3d3251b-41bd-4040-bafc-5ef639b03001:
+            uuid: b3d3251b-41bd-4040-bafc-5ef639b03001
+            region: first
+            configuration:
+              id: 'field_block:block_content:content_block_2:field_titulo'
+              label: titulo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: block_content.content_block_2.default
@@ -119,4 +138,5 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_titulo: true

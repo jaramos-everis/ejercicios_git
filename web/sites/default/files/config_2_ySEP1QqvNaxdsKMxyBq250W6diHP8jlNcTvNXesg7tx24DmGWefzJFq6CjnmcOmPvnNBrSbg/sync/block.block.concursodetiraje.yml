@@ -1,0 +1,30 @@
+uuid: ed04fe53-64cb-40ec-aef5-c4411e059daa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_3:6d8adcd7-25fe-4d6c-b144-58ae041a6fb5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: concursodetiraje
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:6d8adcd7-25fe-4d6c-b144-58ae041a6fb5'
+settings:
+  id: 'block_content:6d8adcd7-25fe-4d6c-b144-58ae041a6fb5'
+  label: 'CONCURSO DE TIRAJE'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -13,7 +13,7 @@ entity_type: block_content
 bundle: nota_cata
 label: 'imagen cata'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
