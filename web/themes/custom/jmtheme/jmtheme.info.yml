@@ -1,0 +1,29 @@
+name: Theme custom simple JM
+type: theme
+description: "A sleek & practical theme for the curious minds."
+core_version_requirement: ^8 || ^9
+core: 8.x #versiones por debajo de 8.7.7. Version antigua.
+base theme: stable
+screenshot: Botellas_Desktop.jpg
+regions: 
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: 'Footer'
+  footer_first: Footer first
+  footer_second: Footer second
+  footer_third: Footer third
+  footer_fourth: Footer fourth
+  breadcrumb: 'Breadcrumb'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - jmtheme/general-css
+  - jmtheme/blackOne
+

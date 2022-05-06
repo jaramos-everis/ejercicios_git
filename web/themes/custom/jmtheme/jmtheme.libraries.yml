@@ -1,0 +1,13 @@
+general-css:
+  version: Version
+  css:
+    theme:
+      css/layoutJm.css: {}
+blackOne:
+  license:
+    name: Apache License, Version 2.0.
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Black+Ops+One&display=swap: { type: external }
+      css/layoutJm.css: {}
