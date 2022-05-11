@@ -1,0 +1,14 @@
+
+<style>
+  .notadecata-container{
+    display: flex;
+    justify-content: end;
+    padding: 0 162px;
+  }
+</style>
+
+<div class="notadecata-container">
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

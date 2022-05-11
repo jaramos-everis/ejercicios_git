@@ -1,0 +1,9 @@
+name: estrelladelevante
+type: theme
+description: "Tema para la web de Estrella de Levante"
+version: 1
+base theme: stable
+core_version_requirement: ^8 || ^9
+
+libraries:
+  - estrelladelevante/general

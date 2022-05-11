@@ -1,0 +1,19 @@
+
+<style>
+  .cata-container {
+    padding: 4em;
+    padding-right: 8em;
+    background-color: white;
+  }
+
+  .cata-container h3{
+    width: 365px;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+</style>
+<div class="cata-container">
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

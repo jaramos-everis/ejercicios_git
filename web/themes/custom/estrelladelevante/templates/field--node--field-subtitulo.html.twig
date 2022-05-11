@@ -1,0 +1,63 @@
+
+<style>
+  .subtitulo-container{
+    background-color: white;
+    padding: 119px 0 114px;
+    color: rgb(22, 113, 22);
+    text-align: center;
+  }
+  .subtitulo-container blockquote{
+    width: 30%;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 32px;
+  }
+</style>
+{# {{ dump(content |keys) }} #}
+
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ * @see template_preprocess_field()
+ */
+#}
+
+<div class="subtitulo-container">
+  <img src="https://cdn-icons.flaticon.com/png/512/4121/premium/4121348.png?token=exp=1651820984~hmac=92dc9ea7dca593cdf69dfa4fd757752f" 
+  alt="estrella del logo de la empresa" width="50"/>
+  {% for item in items %}
+    <div{{ attributes }}>{{ item.content }}</div>
+  {% endfor %}
+</div>

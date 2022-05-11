@@ -1,0 +1,33 @@
+
+<style>
+  .block-header-background{
+    width: 100%;
+    height: 37vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+  }
+  .title-header{
+    color: white;
+    text-align: center;
+  }
+  .title-header div{
+    font-size: 5.29rem;
+    line-height: 6.14rem;
+    letter-spacing: -0.12rem;
+  }
+</style>
+
+{% set background_image = file_url(content.field_portada[0]['#media'].field_media_image.entity.uri.value) %}
+{% set color = content.field_color_fondo[0]['#markup'] %}
+
+<div class="block-header-container" style="background-color: {{ color }};">
+  <div class="block-header-background" style="background-image: url('{{ background_image }}');">
+    <h1 class="title-header">{{ content.field_titulo_cabecera }}</h1>
+  </div>
+</div>
