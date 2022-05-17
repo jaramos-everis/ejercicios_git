@@ -53,9 +53,15 @@
  * @see template_preprocess_field()
  */
 #}
+<style>
+  .subtitulo-container div[data-quickedit-field-id *= "/field_subtitulo/"]{
+    width: 50%;
+    margin: 0 auto;
+  }
+</style>
 
 <div class="subtitulo-container">
-  <img src="https://cdn-icons.flaticon.com/png/512/4121/premium/4121348.png?token=exp=1651820984~hmac=92dc9ea7dca593cdf69dfa4fd757752f" 
+  <img src="https://www.estrelladelevante.es/themes/custom/damm/images/estrella.png" 
   alt="estrella del logo de la empresa" width="50"/>
   {% for item in items %}
     <div{{ attributes }}>{{ item.content }}</div>

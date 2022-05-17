@@ -1,0 +1,35 @@
+
+<style>
+  .historia-container {
+    padding: 115px;
+    display: grid;
+  }
+
+  .historia-container div[data-quickedit-field-id *= "/field_titulo_bloque/"]{
+    width: 516px;
+    font-size: 3.86rem;
+    line-height: 4.64rem;
+    font-family: "Superclarendon", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1.41px;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .historia-container div[data-quickedit-field-id *= "/body/"]{
+    width: 636px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 30%;
+  }
+  .historia-container div[data-quickedit-field-id *= "/field_imagen_portada/"]{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 5%;
+  }
+</style>
+<div class="historia-container">
+  {% for item in items %}
+    {{ item.content }}
+  {% endfor %}
+</div>

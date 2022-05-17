@@ -1,4 +1,5 @@
 
+{% set color = content.field_color_fondo[0]['#markup'] %}
 <style>
   .block-header-container{
     margin-top: 0;
@@ -25,7 +26,6 @@
 </style>
 
 {% set background_image = file_url(content.field_portada[0]['#media'].field_media_image.entity.uri.value) %}
-{% set color = content.field_color_fondo[0]['#markup'] %}
 
 <div class="block-header-container" style="background-color: {{ color }};">
   <div class="block-header-background" style="background-image: url('{{ background_image }}');">

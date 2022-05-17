@@ -1,4 +1,6 @@
 
+{% set color = content.field_color_fondo[0]['#markup'] %}
+
 <style>
   .block-header-background{
     width: 100%;
@@ -21,10 +23,25 @@
     line-height: 6.14rem;
     letter-spacing: -0.12rem;
   }
+  
+  footer {
+    background-color: {{ color }};
+    color: white !important;
+  }
+  footer a{
+    color: white !important;
+  }
+  footer a:hover{
+    color: rgb(232, 202, 5) !important;
+  }
+
+  .cata-container {
+    background-color: white !important;
+    color: {{ color }} !important
+  }
 </style>
 
 {% set background_image = file_url(content.field_portada[0]['#media'].field_media_image.entity.uri.value) %}
-{% set color = content.field_color_fondo[0]['#markup'] %}
 
 <div class="block-header-container" style="background-color: {{ color }};">
   <div class="block-header-background" style="background-image: url('{{ background_image }}');">
