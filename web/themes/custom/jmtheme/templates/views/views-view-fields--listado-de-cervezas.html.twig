@@ -30,16 +30,23 @@
  */
 #}
 
+
+{# El wrapper_element provee a la estructura la herencia de la plantilla superior, el grid de la view
+Todo el contenido viene del array fields, accedemos al mismo con field.nombredelcampo.content
+Instando el módulo twig Tweak podemos ver el contenido de las variables con dd() o Drupal_dump()
+El filtro striptags strips SGML/XML tags and replace adjacent whitespace by one space #}
+
 {{ field.separator }}
 {%- if field.wrapper_element -%}
 	<{{field.wrapper_element}}{{field.wrapper_attributes}}>
 	{%- endif %}
 
-	<a href="">
-		{{ fields.field_imagen_cerveza.content }}
-		{{ fields.title.content }}
-	</a>
-	<a href="{{ fields.view_node.content }}">TEXT</a>
+  <div class="bloquetipodecerveza__div">
+    <a class="bloquetipodecerveza__a" href="{{ fields.view_node.content|striptags}}">
+      {{ fields.field_imagen_cerveza.content}}
+      <div class="bloquetipodecerveza__title">{{ fields.title.content|striptags|upper }}</div>
+    </a>
+  </div>
 
 	{%- if field.wrapper_element -%}
 	</{{field.wrapper_element}}>

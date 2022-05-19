@@ -3,7 +3,7 @@ type: theme
 description: "A sleek & practical theme for the curious minds."
 core_version_requirement: ^8 || ^9
 core: 8.x #versiones por debajo de 8.7.7. Version antigua.
-base theme: stable
+base theme: classy
 screenshot: Botellas_Desktop.jpg
 regions: 
   header: 'Header'
