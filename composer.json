@@ -34,6 +34,7 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/devel": "^4.1",
         "drupal/entity_usage": "^2.0@beta",
         "drupal/fontawesome": "^2.23",
         "drupal/jw_player": "^1.0@beta",

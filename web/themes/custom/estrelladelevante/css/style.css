@@ -194,6 +194,7 @@ footer{
 .contact-form-block, #block-estrelladelevante-views-block-noticias-block-1{
   padding: 5em;
   background-color: #006432;
+  height: 43vw;
 }
 
 .contact-form-block, .contact-form-block a{
@@ -207,31 +208,6 @@ footer{
 
 .contact-form-block h1{
   text-align: start;
-}
-
-input, select{
-  background-color: transparent;
-  border: 0px;
-  border-bottom: 2px solid white;
-  margin-bottom: 0.5em;
-}
-
-input, select{
-  color: rgb(232, 202, 5);
-}
-
-input[type="submit"]{
-  font-size: 1.38rem;
-  line-height: 2.36rem;
-  margin-top: 36px;
-  color: white;
-  cursor: pointer;
-  border-color: transparent;
-  text-decoration: underline;
-}
-
-input[type="submit"]:hover{
-  color: rgb(232, 202, 5);
 }
 
 footer .layout{
@@ -449,3 +425,71 @@ div[data-quickedit-field-id="node/14/field_contenido_de_la_pagina/es/full"] div[
 div[data-quickedit-field-id="node/14/field_contenido_de_la_pagina/es/full"] div[data-quickedit-field-id *= "/field_imagen_portada/"] img{
   height: 450px !important;
 }
+
+#block-customformblockjl{
+  width: 50%;
+  text-align: left;
+  margin-top: -34%;
+  margin-left: 27%;
+}
+#block-customformblockjl input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select.form-select {
+  background: transparent;
+  border: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 100%;
+  color: #dda800;
+  font-size: 1.14rem;
+  line-height: 1.43rem;
+  font-weight: bold;
+  border-bottom: 1px solid #fff !important;
+  outline: none;
+}
+#block-customformblockjl input{
+  color: white !important;
+  font-size: 17px;
+}
+#block-customformblock .js-form-item .form-item .js-form-type-radio .form-item-data-protection .js-form-item-data-protection{
+  display: flex;
+}
+#block-customformblockjl input[type="radio"]{
+  width: 5%;
+}
+#block-customformblockjl label[for="edit-data-protection"]{
+  width: 95% !important;
+  color: white !important;
+}
+textarea {
+  background-image: linear-gradient(transparent, transparent 34px, white 34px, white 35px, transparent 34px);
+  background-size: 100% 36px;
+  font-size: 1.14rem;
+  line-height: 36px;
+  font-weight: bold;
+  color: #dda800;
+  border: none !important;
+  background-color: #006432;
+  height: 144px;
+  resize: none !important;
+  outline: none;
+  overflow: hidden;
+  caret-color: #dda800;
+}
+input[type="submit"], input[type="reset"], input[type="button"], button {
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin-top: 2em;
+}
+
+input[type="submit"]:hover{ color:#dda800 !important; }

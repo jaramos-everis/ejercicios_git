@@ -1,0 +1,5 @@
+name: Estrella de Levante Contact Form
+description: "Contact form to the web Estrella de Levante"
+package: JLform
+type: module
+core_version_requirement: ^9.0
