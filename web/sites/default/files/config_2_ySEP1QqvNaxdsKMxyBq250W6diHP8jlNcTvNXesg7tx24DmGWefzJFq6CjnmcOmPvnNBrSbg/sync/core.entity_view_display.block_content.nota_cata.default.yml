@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.nota_cata
     - field.field.block_content.nota_cata.body
     - field.field.block_content.nota_cata.field_alc_vol_
+    - field.field.block_content.nota_cata.field_clase
     - field.field.block_content.nota_cata.field_gluten
     - field.field.block_content.nota_cata.field_imagen_cata
     - field.field.block_content.nota_cata.field_temperatura_ideal1
@@ -136,6 +137,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_clase:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: first
   field_gluten:
     type: image
     label: above

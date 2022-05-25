@@ -7,15 +7,42 @@ dependencies:
     - field.field.paragraph.texto_tipo_tabla.field_text
     - field.field.paragraph.texto_tipo_tabla.field_texto_1
     - field.field.paragraph.texto_tipo_tabla.field_texto_2
+    - field.field.paragraph.texto_tipo_tabla.field_titulo
     - paragraphs.paragraphs_type.texto_tipo_tabla
   module:
     - layout_builder
+    - layout_discovery
     - text
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: false
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          8ea29f1d-61c3-4a59-8cb1-1fd00e2f69c3:
+            uuid: 8ea29f1d-61c3-4a59-8cb1-1fd00e2f69c3
+            region: content
+            configuration:
+              id: 'field_block:paragraph:texto_tipo_tabla:field_titulo'
+              label: titulo
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_threecol_section
         layout_settings:
@@ -136,5 +163,12 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_titulo:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden: {  }

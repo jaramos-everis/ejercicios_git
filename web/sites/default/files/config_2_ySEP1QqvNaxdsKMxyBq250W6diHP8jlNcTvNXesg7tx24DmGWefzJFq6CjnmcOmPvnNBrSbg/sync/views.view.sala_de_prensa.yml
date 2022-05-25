@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_imagen_prensa
     - image.style.escala_y_corte
+    - image.style.miniatura_eventos
     - node.type.articulo_prensa
     - taxonomy.vocabulary.categoria
   content:
@@ -435,13 +436,13 @@ display:
       style:
         type: grid
         options:
-          uses_fields: false
+          grouping: {  }
           columns: 3
           automatic_width: true
           alignment: horizontal
-          row_class_custom: ''
+          row_class_custom: pruebapresanRow
           row_class_default: true
-          col_class_custom: ''
+          col_class_custom: pruebapresanColunm
           col_class_default: true
       row:
         type: fields
@@ -539,7 +540,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: escala_y_corte
+            image_style: miniatura_eventos
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -751,11 +752,75 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            articulo_prensa: articulo_prensa
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       defaults:
+        css_class: false
         pager: false
         link_display: false
         link_url: false
         fields: false
+        filters: false
+        filter_groups: false
+      css_class: pruebaprensa
       link_display: custom_url
       link_url: /buscador-de-eventos
       display_extenders: {  }
@@ -768,7 +833,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -833,7 +897,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: escala_y_corte
+            image_style: miniatura_eventos
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1168,6 +1232,7 @@ display:
     display_plugin: page
     position: 2
     display_options:
+      title: 'SALA DE PRENSA'
       fields:
         field_imagen_prensa:
           id: field_imagen_prensa
@@ -1222,7 +1287,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: escala_y_corte
+            image_style: miniatura_eventos
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1420,12 +1485,12 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 3
+          items_per_page: 6
           total_pages: null
           id: 0
           tags:
-            next: 'SIGUIENTE  »'
-            previous: '« ANTERIOR'
+            next: 'SIGUIENTE ›'
+            previous: '‹ ANTERIOR'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -1605,13 +1670,13 @@ display:
       style:
         type: grid
         options:
-          uses_fields: false
+          grouping: {  }
           columns: 3
           automatic_width: true
           alignment: horizontal
-          row_class_custom: ''
+          row_class_custom: salaprensa_row
           row_class_default: true
-          col_class_custom: ''
+          col_class_custom: salaprensa_column
           col_class_default: true
       row:
         type: fields
@@ -1621,6 +1686,7 @@ display:
           separator: ''
           hide_empty: false
       defaults:
+        title: false
         pager: false
         use_more: false
         use_more_always: false

@@ -1,0 +1,8 @@
+name: 'Form JM'
+type: 'module'
+core_version_requirement: ^9
+description: 'Allows users use form contact Index.'
+package: 'Form JM'
+
+# dependencies:
+#   - drupal:block

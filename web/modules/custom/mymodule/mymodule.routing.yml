@@ -1,0 +1,15 @@
+mymodule.default_controller_index:
+  path: '/mymodule/index'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\DefaultController::index'
+    _title: 'mymodule Title'
+  requirements:
+    _permission: 'access content'
+
+mymodule.modal:
+  path: '/mymodule/modal'
+  defaults:
+    _controller: '\Drupal\mymodule\Controller\DefaultController::modal'
+    _title: 'mymodule Title'
+  requirements:
+    _permission: 'access content'

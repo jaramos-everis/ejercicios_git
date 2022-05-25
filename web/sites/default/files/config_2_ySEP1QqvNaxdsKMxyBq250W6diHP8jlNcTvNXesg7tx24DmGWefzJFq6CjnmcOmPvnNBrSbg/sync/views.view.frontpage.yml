@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
   module:
     - node
@@ -64,18 +63,7 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: title
-          label: ''
-          empty: true
-          title: 'Welcome to [site:name]'
+      empty: {  }
       sorts:
         sticky:
           id: sticky
@@ -225,6 +213,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
+      css_class: ''
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -243,7 +232,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: node
+      path: home
     cache_metadata:
       max-age: -1
       contexts:

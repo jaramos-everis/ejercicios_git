@@ -38,11 +38,101 @@
 header>div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 13px 51px 23px 46px;
 }
 
 header img {
   width: 176px;
+}
+
+/* VENTANA MODAL */
+.icon-list {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+}
+
+.modal-menu {
+  position: absolute;
+  z-index: 1000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+header .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a {
+  font-family: 'Black Ops One', serif;
+  font-size: 3.6rem;
+  line-height: 1;
+  color: #006432;
+  text-decoration: none;
+
+}
+
+header .menu a:visited {
+  font-family: 'Black Ops One', serif;
+  font-size: 3.6rem;
+  color: #006432
+}
+
+header .menu a:hover {
+  color: #dda800;
+}
+
+#cerrar {
+  color: black;
+  align-self: flex-end;
+  background: transparent;
+  color: #006432;
+  font-size: xx-large;
+  margin: 40px 50px;
+  border: 0;
+}
+
+
+.menu-modal:last-child {
+  display: inline;
+  list-style-type: none;
+}
+
+.menu-modal:nth-last-child(2) a {
+  font-size: 1.14rem;
+  line-height: 1.43rem;
+  color: #dda800;
+  display: inline-block;
+  margin: 0;
+}
+
+.menu-modal:nth-last-child(2) a:visited {
+  color: #dda800;
+  display: inline-block;
+  margin: 0;
+}
+
+.menu-modal:last-child a {
+  font-size: 1.14rem;
+  line-height: 1.43rem;
+  color: #dda800;
+  display: inline-block;
+  margin: 0;
+}
+
+.menu-modal:last-child a:visited {
+  color: #dda800;
+  display: inline-block;
+  margin: 0;
 }
 
 /***** ________________ESTRUCTURA PAGE________________ ******/
@@ -94,6 +184,17 @@ footer nav ul a:hover {
   color: #dda800;
 }
 
+footer .redes-sociales {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+footer .redes-sociales svg {
+  border: 1px solid currentColor;
+  padding: 5px;
+  border-radius: 100%;
+}
 
 /****** ________________BLOQUES________________ ******/
 
@@ -265,6 +366,16 @@ footer nav ul a:hover {
   text-align: center;
   justify-content: center;
   color: #006432;
+}
+
+.bloquetipodecerveza__a img:hover {
+  /* background-image: url(https://estrelladelevantejm.lndo.site/sites/default/files/2022-05/hover-botella.png); */
+  content: url('https://estrelladelevantejm.lndo.site/sites/default/files/2022-05/hover-botella.png');
+}
+
+.col-5 .bloquetipodecerveza__a img:hover {
+  /* background-image: url(https://estrelladelevantejm.lndo.site/sites/default/files/2022-05/hover-botella.png); */
+  content: url('https://estrelladelevantejm.lndo.site/sites/default/files/2022-05/lata_hover_pro.png');
 }
 
 .bloquetipodecerveza__title {
@@ -956,4 +1067,62 @@ footer nav ul a:hover {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 19px;
+}
+
+
+/*FORMULARIO FORM API, MODULO CUSTOM*/
+
+.block-formjm {
+  display: flex;
+  width: 20%;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.43rem;
+}
+
+.block-formjm input,
+select,
+textarea {
+  color: #dda800;
+  font-weight: bold;
+}
+
+.block-formjm input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-weight: lighter;
+}
+
+.block-formjm textarea::placeholder {
+  border-bottom: 1px solid white;
+}
+
+.block-formjm input:focus,
+textarea:focus,
+select:focus {
+  font-weight: bold;
+  color: #dda800;
+}
+
+.block-formjm input,
+textarea,
+select {
+  background-color: #006432;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+.block-formjm textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#edit-submit--2 {
+  font-family: 'Black Ops One', serif;
+  font-size: 1.29rem;
+  line-height: 2.36rem;
+  text-decoration: underline;
+  border: 0;
+  color: white;
 }

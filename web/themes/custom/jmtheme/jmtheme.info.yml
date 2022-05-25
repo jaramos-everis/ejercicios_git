@@ -26,4 +26,5 @@ regions:
 libraries:
   - jmtheme/general-css
   - jmtheme/blackOne
+  - jmtheme/modal-js
 

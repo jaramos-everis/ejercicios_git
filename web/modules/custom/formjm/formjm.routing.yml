@@ -1,0 +1,9 @@
+formjm.jm_formulario:
+  path: '/formjm'
+  defaults:
+    _form: '\Drupal\formjm\Form\JMForm'
+    _title: 'Form JM'
+  requirements:
+    # _permission: view jmform
+    # Permite ver todo el contenido es un permiso del core, system.permissions.yml se encuentra definido.
+    _permission: 'access content'

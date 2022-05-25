@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.content_block_with_image
     - field.field.block_content.content_block_with_image.body
     - field.field.block_content.content_block_with_image.field_image_block1
+    - field.field.block_content.content_block_with_image.layout_builder__layout
   module:
     - image
     - layout_builder

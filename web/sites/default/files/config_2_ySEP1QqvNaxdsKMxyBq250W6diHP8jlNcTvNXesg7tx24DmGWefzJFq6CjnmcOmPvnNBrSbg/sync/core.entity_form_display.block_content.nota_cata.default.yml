@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.nota_cata
     - field.field.block_content.nota_cata.body
     - field.field.block_content.nota_cata.field_alc_vol_
+    - field.field.block_content.nota_cata.field_clase
     - field.field.block_content.nota_cata.field_gluten
     - field.field.block_content.nota_cata.field_imagen_cata
     - field.field.block_content.nota_cata.field_temperatura_ideal1
@@ -31,6 +32,14 @@ content:
   field_alc_vol_:
     type: text_textfield
     weight: 28
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_clase:
+    type: string_textfield
+    weight: 32
     region: content
     settings:
       size: 60
