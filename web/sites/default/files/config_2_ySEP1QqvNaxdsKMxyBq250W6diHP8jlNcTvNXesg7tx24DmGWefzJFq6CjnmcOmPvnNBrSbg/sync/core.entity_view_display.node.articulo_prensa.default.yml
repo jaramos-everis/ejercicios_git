@@ -26,21 +26,6 @@ third_party_settings:
           context_mapping: {  }
           column_widths: 25-50-25
         components:
-          7b014f2d-4849-4061-8a37-06f4629a85ba:
-            uuid: 7b014f2d-4849-4061-8a37-06f4629a85ba
-            region: second
-            configuration:
-              id: 'field_block:node:articulo_prensa:body'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
           b3721596-9691-4ef1-b2c8-67a56749195c:
             uuid: b3721596-9691-4ef1-b2c8-67a56749195c
             region: second
@@ -61,6 +46,44 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          5e2886f6-5cce-481c-81dc-e4249490ab49:
+            uuid: 5e2886f6-5cce-481c-81dc-e4249490ab49
+            region: first
+            configuration:
+              id: 'extra_field_block:node:articulo_prensa:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          7b014f2d-4849-4061-8a37-06f4629a85ba:
+            uuid: 7b014f2d-4849-4061-8a37-06f4629a85ba
+            region: second
+            configuration:
+              id: 'field_block:node:articulo_prensa:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
           b97f05c1-f098-4d1d-bde5-1b7ab3cca51c:
             uuid: b97f05c1-f098-4d1d-bde5-1b7ab3cca51c
             region: second
@@ -78,26 +101,7 @@ third_party_settings:
                 settings:
                   link: true
                 third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          55133001-d9db-48ba-9570-9c330b380483:
-            uuid: 55133001-d9db-48ba-9570-9c330b380483
-            region: first
-            configuration:
-              id: 'field_block:node:articulo_prensa:field_redes_sociales'
-              label: 'redes sociales'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-            weight: 0
+            weight: 5
             additional: {  }
           0cf4ddfc-03c8-4c40-9d8d-b3b4792fe535:
             uuid: 0cf4ddfc-03c8-4c40-9d8d-b3b4792fe535
@@ -116,7 +120,7 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 2
+            weight: 3
             additional: {  }
           8a392c89-3392-4f53-8d40-32db6c3c3fa9:
             uuid: 8a392c89-3392-4f53-8d40-32db6c3c3fa9
@@ -137,7 +141,26 @@ third_party_settings:
                   custom_date_format: ''
                   timezone: Europe/Madrid
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
+            additional: {  }
+          509f03c1-2363-422a-b4bb-1fbd50308b78:
+            uuid: 509f03c1-2363-422a-b4bb-1fbd50308b78
+            region: first
+            configuration:
+              id: 'field_block:node:articulo_prensa:field_redes_sociales'
+              label: 'redes sociales'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
       -

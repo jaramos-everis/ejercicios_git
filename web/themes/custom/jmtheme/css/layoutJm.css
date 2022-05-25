@@ -1126,3 +1126,34 @@ input:focus {
   border: 0;
   color: white;
 }
+
+/*Articulos promoción y prensa*/
+
+.redes-sociales-articulos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+  gap: 10px;
+}
+
+.layout--threecol-section--25-50-25 {
+  margin-top: 30px;
+}
+
+.redes-sociales-articulos {
+  margin: 15px 20px 0px 0px;
+}
+
+.redes-sociales-articulos svg {
+  border: 1px solid #dda800;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.field--name-field-imagen-prensa {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
