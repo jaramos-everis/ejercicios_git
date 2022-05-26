@@ -1,0 +1,25 @@
+uuid: e54563c5-5f14-4cac-9cd8-6c733d2f255f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - jmtheme
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: jmtheme_branding
+theme: jmtheme
+region: header
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

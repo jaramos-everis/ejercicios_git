@@ -1,0 +1,30 @@
+uuid: 8becfc28-8a0b-43b1-babc-955db7834012
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block:564d72e2-6e89-4277-8534-fd69eac361ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: visitanuestrafabrica
+theme: jmtheme
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:564d72e2-6e89-4277-8534-fd69eac361ec'
+settings:
+  id: 'block_content:564d72e2-6e89-4277-8534-fd69eac361ec'
+  label: 'VISITA NUESTRA FÁBRICA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: 329e2646-f7b2-448f-ab54-7409bc0e5577
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_with_image:ac8989d9-a87f-48b5-ad80-141e7d8086f7'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: footerlogoyconsumo.tipodecerveza
+theme: jmtheme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:ac8989d9-a87f-48b5-ad80-141e7d8086f7'
+settings:
+  id: 'block_content:ac8989d9-a87f-48b5-ad80-141e7d8086f7'
+  label: 'FOOTER - Logo y consumo. Blanco Tipo de cerveza'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/estrella-de-levante\r\n/estrella-de-levante-00\r\n/estrella-de-levante-00-tostada"

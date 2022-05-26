@@ -1,0 +1,30 @@
+uuid: a52571c9-5958-4078-a88b-655fd3d8770a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_with_image:6170bbc0-513d-4fb5-aed6-189873dbaa83'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: footerlogoyconsumo_2
+theme: jmtheme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:6170bbc0-513d-4fb5-aed6-189873dbaa83'
+settings:
+  id: 'block_content:6170bbc0-513d-4fb5-aed6-189873dbaa83'
+  label: 'FOOTER - Logo y consumo front'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/buscador-de-eventos"

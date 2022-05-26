@@ -1,0 +1,30 @@
+uuid: cf5cbd0d-072c-45d6-b6a2-5a497ed6c7dc
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:bloque_background:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: jmtheme_bloquefabricaimagenbackground
+theme: jmtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+settings:
+  id: 'block_content:53479b50-5842-4c25-a44a-a1d9d4cf9b78'
+  label: 'BLOQUE FÁBRICA imagen background'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

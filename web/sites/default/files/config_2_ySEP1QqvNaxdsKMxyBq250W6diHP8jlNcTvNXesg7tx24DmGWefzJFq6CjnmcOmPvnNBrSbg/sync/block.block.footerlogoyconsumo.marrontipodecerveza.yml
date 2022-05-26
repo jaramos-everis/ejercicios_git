@@ -1,0 +1,30 @@
+uuid: f562746a-19a1-4336-af7a-d9ab53101ecd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_with_image:8f91521c-343b-4d6a-907f-ab6bdc00f5d5'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: footerlogoyconsumo.marrontipodecerveza
+theme: jmtheme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:8f91521c-343b-4d6a-907f-ab6bdc00f5d5'
+settings:
+  id: 'block_content:8f91521c-343b-4d6a-907f-ab6bdc00f5d5'
+  label: 'FOOTER - Logo y consumo. Marron Tipo de cerveza'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /puntaeste

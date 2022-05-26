@@ -1,0 +1,30 @@
+uuid: 7a021b81-c018-4f7b-aa05-b63bed8db1f8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_with_image:a55a95a2-dd21-4bac-bc89-df90b129669d'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: footerlogoyconsumo.salmontipodecerveza
+theme: jmtheme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:a55a95a2-dd21-4bac-bc89-df90b129669d'
+settings:
+  id: 'block_content:a55a95a2-dd21-4bac-bc89-df90b129669d'
+  label: 'FOOTER - Logo y consumo. Salmon Tipo de cerveza'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /verna

@@ -1,0 +1,25 @@
+uuid: e243bab2-fb4c-4c54-a534-6bda56251c8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-politicas-priv
+  module:
+    - system
+  theme:
+    - jmtheme
+id: jmtheme_footerpoliticaspriv
+theme: jmtheme
+region: footer_third
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer-politicas-priv'
+settings:
+  id: 'system_menu_block:footer-politicas-priv'
+  label: 'Footer políticas priv'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

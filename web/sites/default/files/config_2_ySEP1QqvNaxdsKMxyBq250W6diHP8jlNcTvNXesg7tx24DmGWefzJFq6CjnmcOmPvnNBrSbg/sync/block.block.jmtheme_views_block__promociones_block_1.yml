@@ -1,0 +1,29 @@
+uuid: daa29dd8-e31b-4063-8a00-a56df4c35e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.promociones
+  module:
+    - system
+    - views
+  theme:
+    - jmtheme
+id: jmtheme_views_block__promociones_block_1
+theme: jmtheme
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:promociones-block_1'
+settings:
+  id: 'views_block:promociones-block_1'
+  label: PROMOCIONES
+  label_display: visible
+  provider: views
+  views_label: PROMOCIONES
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

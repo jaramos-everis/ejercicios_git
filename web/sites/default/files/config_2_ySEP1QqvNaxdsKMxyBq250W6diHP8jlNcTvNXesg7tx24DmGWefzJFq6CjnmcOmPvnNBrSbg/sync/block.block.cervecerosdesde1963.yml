@@ -1,0 +1,30 @@
+uuid: 00b1171a-a6c7-4fcc-8ed0-780daf901491
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:content_block_2:d0a7be60-7952-419e-b31f-d4b39fb880ff'
+  module:
+    - block_content
+    - system
+  theme:
+    - jmtheme
+id: cervecerosdesde1963
+theme: jmtheme
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:d0a7be60-7952-419e-b31f-d4b39fb880ff'
+settings:
+  id: 'block_content:d0a7be60-7952-419e-b31f-d4b39fb880ff'
+  label: 'CERVECEROS DESDE 1963'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
