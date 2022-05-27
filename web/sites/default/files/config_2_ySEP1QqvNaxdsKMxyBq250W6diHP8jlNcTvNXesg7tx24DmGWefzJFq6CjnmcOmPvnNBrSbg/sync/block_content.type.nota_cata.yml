@@ -1,8 +1,0 @@
-uuid: 1b1899fd-4da7-4223-8d7e-6fe192970302
-langcode: en
-status: true
-dependencies: {  }
-id: nota_cata
-label: 'Nota de cata block'
-revision: 0
-description: 'Nota de cata block contains a title, body, image cata, image gluten, text temp and text vol alc.'

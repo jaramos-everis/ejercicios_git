@@ -1,8 +1,0 @@
-uuid: c439db28-2141-48d0-a2ee-4a45ba6c2671
-langcode: en
-status: true
-dependencies: {  }
-id: bloque_background
-label: 'Bloque de background'
-revision: 0
-description: 'Bloque de estructura con solo imagen de background.'

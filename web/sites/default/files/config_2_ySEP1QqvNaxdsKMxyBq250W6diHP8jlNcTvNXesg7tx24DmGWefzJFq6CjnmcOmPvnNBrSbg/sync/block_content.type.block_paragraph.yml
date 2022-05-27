@@ -1,8 +1,0 @@
-uuid: d095e2e6-c230-4091-be58-1dc9275a5e35
-langcode: en
-status: true
-dependencies: {  }
-id: block_paragraph
-label: 'Block Paragraph'
-revision: 0
-description: 'Block entiti reference Paragraph'

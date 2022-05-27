@@ -1,8 +1,0 @@
-uuid: 2183aab9-e6cc-4f95-86ae-7d6255580191
-langcode: en
-status: true
-dependencies: {  }
-id: content_block
-label: 'Content block Left-image Link'
-revision: 1
-description: 'A basic block contains a title, body, link and image left.'

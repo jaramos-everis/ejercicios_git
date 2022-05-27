@@ -1,8 +1,0 @@
-uuid: 21a90daa-39f0-4c95-94eb-9b7b5de51c76
-langcode: en
-status: true
-dependencies: {  }
-id: footer-politicas-priv
-label: 'Footer políticas priv'
-description: 'Menu para el footer con enlaces de politicas'
-locked: false

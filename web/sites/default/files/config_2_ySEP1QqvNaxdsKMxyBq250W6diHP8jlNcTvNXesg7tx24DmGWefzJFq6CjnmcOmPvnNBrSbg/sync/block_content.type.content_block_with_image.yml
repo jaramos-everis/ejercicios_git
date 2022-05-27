@@ -1,8 +1,0 @@
-uuid: 05cc2ce8-4942-436f-9229-53f4ee232686
-langcode: en
-status: true
-dependencies: {  }
-id: content_block_with_image
-label: 'Content block with image'
-revision: 0
-description: 'A basic block contains a title, body and image.'
